@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo Forestal</title>
+   
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4caf50; 
+            --secondary-color: #388e3c; 
+            --light-color: #e8f5e9; 
+            --text-dark: #212529; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .navbar-light .navbar-brand,
+        .navbar-light .nav-link {
+            color: var(--primary-color) !important;
+        }
+
+        .navbar-light .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+
+        .card {
+            background-color: var(--light-color);
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white py-3 text-center">
+        <h1>Manejo Forestal</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#music">Música</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button onclick="window.location.href='index.html';">Perfil</button>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Conservando el Futuro</h1>
+    </div>
+
+    <div class="container my-5">
+        <section id="about" class="mb-5">
+            <h2 class="text-center mb-4 text-primary">Sobre Nosotros</h2>
+            <p class="text-center">Somos líderes en el manejo forestal sostenible, comprometidos con la preservación de nuestros bosques y la biodiversidad.</p>
+            <div class="text-center">
+                <img src="forestal.jpg" alt="Bosque" class="img-fluid rounded mb-4">
+                <div class="d-flex justify-content-center">
+                    <video width="350" controls>
+                        <source src="Forestal.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="mb-5">
+            <h2 class="text-center mb-4 text-primary">Servicios</h2>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary">Evaluación de recursos forestales</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary">Planes de manejo sostenible</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary">Monitoreo y conservación</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary">Educación y concienciación ambiental</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="music" class="mb-5">
+            <h2 class="text-center mb-4 text-primary">Música</h2>
+            <p class="text-center">Disfruta de canciones inspiradoras que celebran la naturaleza y la conservación.</p>
+            <div class="text-center mb-4">
+                <audio controls>
+                    <source src="musica.mp3" type="audio/mp3">
+                    Tu navegador no soporta el reproductor de audio.
+                </audio>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary">"Amanecer Verde"</h5>
+                            <p class="card-text">Una melodía suave para empezar el día en conexión con la naturaleza.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary">"El Susurro del Bosque"</h5>
+                            <p class="card-text">Déjate llevar por los sonidos del bosque en esta pieza instrumental.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary">"Raíces"</h5>
+                            <p class="card-text">Una canción que nos recuerda nuestras raíces y la importancia de cuidarlas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-5">
+            <h2 class="text-center mb-4 text-primary">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">Email: info@manejobosques.com</li>
+                        <li class="list-group-item">Teléfono: +593 123 456 789</li>
+                        <li class="list-group-item">Dirección: Quito, Ecuador</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="text-white py-3 text-center">
+        <p>&copy; 2025 Manejo Forestal.</p>
+    </footer>
+
+    
+</body>
+</html>
